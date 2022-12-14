@@ -24,6 +24,9 @@ class QuoteFactory
         }
     }
 
+    /**
+     * @return string
+     */
     public function getRandomQuote()
     {
         return $this->quotes[rand(0, count($this->quotes)-1)];
